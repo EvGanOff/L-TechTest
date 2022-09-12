@@ -56,10 +56,10 @@
 		5EF7FDFD28CF80B600114FF0 /* UIView + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FDFC28CF80B600114FF0 /* UIView + Extention.swift */; };
 		5EF7FDFF28CFB6C900114FF0 /* MainScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FDFE28CFB6C900114FF0 /* MainScreenConfigurator.swift */; };
 		5EF7FE0128CFB8CD00114FF0 /* DetailScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE0028CFB8CD00114FF0 /* DetailScreenConfigurator.swift */; };
-		5EF7FE1628CFC77E00114FF0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE1528CFC77E00114FF0 /* UserModel.swift */; };
 		5EF7FE1828CFC78F00114FF0 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE1728CFC78F00114FF0 /* MainModel.swift */; };
 		5EF7FE1A28CFC79800114FF0 /* KeyChainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE1928CFC79800114FF0 /* KeyChainModel.swift */; };
 		5EF7FE1C28CFC7A600114FF0 /* MaskNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE1B28CFC7A600114FF0 /* MaskNumberModel.swift */; };
+		5EF7FE2228CFED5300114FF0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7FE2128CFED5300114FF0 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,10 +111,10 @@
 		5EF7FDFC28CF80B600114FF0 /* UIView + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extention.swift"; sourceTree = "<group>"; };
 		5EF7FDFE28CFB6C900114FF0 /* MainScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenConfigurator.swift; sourceTree = "<group>"; };
 		5EF7FE0028CFB8CD00114FF0 /* DetailScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenConfigurator.swift; sourceTree = "<group>"; };
-		5EF7FE1528CFC77E00114FF0 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/UserModel.swift"; sourceTree = "<group>"; };
 		5EF7FE1728CFC78F00114FF0 /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		5EF7FE1928CFC79800114FF0 /* KeyChainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainModel.swift; sourceTree = "<group>"; };
 		5EF7FE1B28CFC7A600114FF0 /* MaskNumberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskNumberModel.swift; sourceTree = "<group>"; };
+		5EF7FE2128CFED5300114FF0 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +172,7 @@
 		5EC8183C28CCAFF700249053 /* MainModels */ = {
 			isa = PBXGroup;
 			children = (
-				5EF7FE1528CFC77E00114FF0 /* UserModel.swift */,
+				5EF7FE2128CFED5300114FF0 /* UserModel.swift */,
 				5EF7FE1728CFC78F00114FF0 /* MainModel.swift */,
 				5EF7FE1928CFC79800114FF0 /* KeyChainModel.swift */,
 				5EF7FE1B28CFC7A600114FF0 /* MaskNumberModel.swift */,
@@ -454,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7B072528CE2A5E0025DE30 /* DetailScreenWorker.swift in Sources */,
+				5EF7FE2228CFED5300114FF0 /* UserModel.swift in Sources */,
 				5EC8185928CD0FDF00249053 /* MainScreenModel.swift in Sources */,
 				5ED0530728CC946800A7FA41 /* LTextField.swift in Sources */,
 				5EC8186328CD150C00249053 /* AuthConfigurator.swift in Sources */,
@@ -462,7 +463,6 @@
 				5EC8186728CD70AD00249053 /* AuthVC.swift in Sources */,
 				5ED052EF28CC8AB200A7FA41 /* LAlertConteinerView.swift in Sources */,
 				5EF7FE1A28CFC79800114FF0 /* KeyChainModel.swift in Sources */,
-				5EF7FE1628CFC77E00114FF0 /* UserModel.swift in Sources */,
 				5ED0530528CC922F00A7FA41 /* Constants.swift in Sources */,
 				5ED0530028CC91B100A7FA41 /* LImageView.swift in Sources */,
 				5EF7FDFF28CFB6C900114FF0 /* MainScreenConfigurator.swift in Sources */,

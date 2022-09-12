@@ -25,7 +25,7 @@ class LSecondaryTitleLabel: UILabel {
     }
 
     private func configure() {
-        textColor = .secondaryLabel
+        textColor = .black
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.90
         lineBreakMode = .byTruncatingTail

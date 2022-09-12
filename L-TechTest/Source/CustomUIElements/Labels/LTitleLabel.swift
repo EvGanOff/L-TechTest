@@ -25,7 +25,7 @@ class LTitleLabel: UILabel {
     }
 
     private func configure() {
-        textColor = .label
+        textColor = .black
         numberOfLines = 4
         minimumScaleFactor = 0.90
         translatesAutoresizingMaskIntoConstraints = false
