@@ -22,16 +22,15 @@ class LTextField: UITextField {
         translatesAutoresizingMaskIntoConstraints = false
         layer.cornerRadius = 10
         layer.borderWidth = 2
-        layer.borderColor = UIColor.systemGray4.cgColor
+        layer.borderColor = UIColor.black.cgColor
 
-        textColor = .label
-        tintColor = .label
+        textColor = .black
         textAlignment = .center
         font = UIFont.preferredFont(forTextStyle: .title2)
         adjustsFontSizeToFitWidth = true
         minimumFontSize = 12
 
-        backgroundColor = .tertiarySystemBackground
+        backgroundColor = .white
         autocorrectionType = .no
         placeholder = ""
         clearButtonMode = .whileEditing

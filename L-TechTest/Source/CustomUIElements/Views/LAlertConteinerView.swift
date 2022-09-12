@@ -18,7 +18,7 @@ class LAlertConteinerView: UIView {
     }
 
     private func configure() {
-        backgroundColor = .systemBackground
+        backgroundColor = .white
         layer.cornerRadius = 20
         layer.borderWidth = 2
         layer.borderColor = UIColor.white.cgColor

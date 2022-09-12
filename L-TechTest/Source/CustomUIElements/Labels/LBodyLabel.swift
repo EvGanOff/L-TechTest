@@ -23,7 +23,7 @@ class LBodyLabel: UILabel {
     }
 
     private func configure() {
-        textColor = .secondaryLabel
+        textColor = .black
         font = UIFont.preferredFont(forTextStyle: .body)
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.7
