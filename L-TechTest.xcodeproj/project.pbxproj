@@ -161,8 +161,8 @@
 		5E4AEE8028CA49ED00A9B799 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				5E4AEE7528CA0EB500A9B799 /* NetworkManager.swift */,
 				5E4AEE7E28CA489100A9B799 /* URLConfiguration.swift */,
+				5E4AEE7528CA0EB500A9B799 /* NetworkManager.swift */,
 				5E4AEE7C28CA1BE100A9B799 /* LError.swift */,
 				5EC8186428CD337800249053 /* ImageManager.swift */,
 			);
