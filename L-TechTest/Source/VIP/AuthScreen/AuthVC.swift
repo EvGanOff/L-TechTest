@@ -81,11 +81,11 @@ final class AuthVC: UIViewController {
         logo.image = Images.mainLogo
 
         logo.snp.makeConstraints { make in
-            make.top.equalTo(view.snp.top).offset(Constats.logoImageViewTopAnchor)
+            make.top.equalTo(view.snp.top).offset(Constants.logoImageViewTopAnchor)
             make.centerX.equalToSuperview()
-            make.leading.equalTo(Constats.logoImageViewPaddingAnchor)
-            make.trailing.equalTo(-Constats.logoImageViewPaddingAnchor)
-            make.height.equalTo(Constats.logoImageViewHeightAnchor)
+            make.leading.equalTo(Constants.logoImageViewPaddingAnchor)
+            make.trailing.equalTo(-Constants.logoImageViewPaddingAnchor)
+            make.height.equalTo(Constants.logoImageViewHeightAnchor)
         }
     }
 
@@ -96,10 +96,10 @@ final class AuthVC: UIViewController {
         }
 
         textFieldStack.snp.makeConstraints { make in
-            make.top.equalTo(logo.snp.bottom).offset(Constats.textFieldStackViewTopAnchor)
+            make.top.equalTo(logo.snp.bottom).offset(Constants.textFieldStackViewTopAnchor)
             make.leading.equalTo(logo.snp.leading)
             make.trailing.equalTo(logo.snp.trailing)
-            make.height.equalTo(Constats.textFieldStackViewHeightAnchor)
+            make.height.equalTo(Constants.textFieldStackViewHeightAnchor)
         }
     }
 
@@ -107,10 +107,10 @@ final class AuthVC: UIViewController {
         actionButton.addTarget(self, action: #selector(pushToMainScreenViewConrolller), for: .touchUpInside)
 
         actionButton.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(Constats.actionButtonBottomAnchor)
-            make.leading.equalTo(view.snp.leading).offset(Constats.actionButtonLeadingAnchor)
-            make.trailing.equalTo(view.snp.trailing).offset(Constats.actionButtonTrailingAnchor)
-            make.height.equalTo(Constats.actionButtonHeightAnchor)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(Constants.actionButtonBottomAnchor)
+            make.leading.equalTo(view.snp.leading).offset(Constants.actionButtonLeadingAnchor)
+            make.trailing.equalTo(view.snp.trailing).offset(Constants.actionButtonTrailingAnchor)
+            make.height.equalTo(Constants.actionButtonHeightAnchor)
         }
     }
 }
@@ -157,7 +157,7 @@ extension AuthVC: UITextFieldDelegate {
 }
 
 // MARK: - Constats and Metrics -
-private struct Constats {
+private struct Constants {
     static let logoImageViewTopAnchor: CGFloat = 150
     static let logoImageViewHeightAnchor: CGFloat = 70
     static let logoImageViewPaddingAnchor: CGFloat = 24

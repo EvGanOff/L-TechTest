@@ -6,28 +6,18 @@
 //
 
 import UIKit
+import SnapKit
 
 extension UIView {
-
     func pinToEdges(of superview: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
 
-        NSLayoutConstraint.activate([
-            topAnchor.constraint(equalTo: superview.topAnchor),
-            leadingAnchor.constraint(equalTo: superview.leadingAnchor),
-            trailingAnchor.constraint(equalTo: superview.trailingAnchor),
-            bottomAnchor.constraint(equalTo: superview.bottomAnchor)
-        ])
-    }
-
-    func pinEdgesToSuperView() {
-        guard let superView = superview else { return }
-        translatesAutoresizingMaskIntoConstraints = false
-
-        topAnchor.constraint(equalTo: superView.topAnchor).isActive = true
-        leftAnchor.constraint(equalTo: superView.leftAnchor).isActive = true
-        bottomAnchor.constraint(equalTo: superView.bottomAnchor).isActive = true
-        rightAnchor.constraint(equalTo: superView.rightAnchor).isActive = true
+        snp.makeConstraints {
+            $0.top.equalTo(superview.snp.top)
+            $0.leading.equalTo(superview.snp.leading)
+            $0.trailing.equalTo(superview.snp.trailing)
+            $0.bottom.equalTo(superview.snp.bottom)
+        }
     }
 
     func transformButton() {
