@@ -12,7 +12,6 @@ protocol MainScreenInteractorProtocol {
     func showInMainScreen()
     func reloadTableView()
     var  requestModels: [MainModel]? { get set }
-    var  worker: MainScreenWorker? { get }
     func updateSearchControl(with searchController: UISearchController)
     func sortByDate()
     func sortByServer()
@@ -26,7 +25,7 @@ final class MainScreenInteractor: MainScreenInteractorProtocol, MainScreenDataSo
     // MARK: - Properties -
     var requestModels: [MainModel]?
     var presenter: MainScreenPresenterProtocol?
-    var worker: MainScreenWorker?
+    var worker = MainScreenWorker()
     var isSearching = false
 
     // MARK: - Metods MainScreenInteractorProtocol
@@ -37,7 +36,7 @@ final class MainScreenInteractor: MainScreenInteractorProtocol, MainScreenDataSo
 
     func updateSearchControl(with searchController: UISearchController) {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else {
-            worker?.fetchModels { [weak self] models in
+            worker.fetchModels { [weak self] models in
                 guard let self = self else { return }
                 DispatchQueue.main.async {
                     self.requestModels = models
@@ -57,7 +56,7 @@ final class MainScreenInteractor: MainScreenInteractorProtocol, MainScreenDataSo
 
     func reloadTableView() {
         requestModels?.removeAll()
-        worker?.fetchModels { [weak self] models in
+        worker.fetchModels { [weak self] models in
             guard let self = self else { return }
             DispatchQueue.main.async {
                 self.requestModels = models

@@ -12,7 +12,6 @@ final class NetworkManager {
     static let shared = NetworkManager()
     let decoder = JSONDecoder()
     let encoder = JSONEncoder()
-    let url = "http://dev-exam.l-tech.ru"
 
     private let configuration = URLConfiration()
 
